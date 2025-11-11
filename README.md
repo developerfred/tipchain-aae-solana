@@ -663,30 +663,7 @@ anchor test -- --test creator_registration
 
 ---
 
-## 🎥 Demo Video Script
 
-### 📹 3-Minute Demo (Required for Hackathon)
-
-**Minute 1: The Problem** (0:00-1:00)
-- Current creator economy broken
-- 20-30% platform fees
-- No micropayments
-- AI agents can't participate
-
-**Minute 2: Our Solution** (1:00-2:00)
-- Live demo: Agent discovers creator
-- Agent sends tip via x402
-- Creator receives instantly (98% after 2% fee)
-- On-chain reputation updates
-- Show dashboard with real-time stats
-
-**Minute 3: Impact & Vision** (2:00-3:00)
-- $100B creator economy now accessible to AI
-- Show: 100+ transactions, 20+ creators, 5+ agents
-- Multi-protocol integration (all sponsors)
-- Call to action: "Join the Agent Economy"
-
----
 
 ## 🏗️ Development Roadmap
 

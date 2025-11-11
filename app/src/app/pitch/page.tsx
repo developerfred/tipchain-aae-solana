@@ -573,7 +573,7 @@ export default function PitchDeck() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="https://github.com/developerfred/solana-x402"
+              href="https://github.com/developerfred/tipchain-aae-solana"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-xl text-white font-semibold transition-all transform hover:scale-105"

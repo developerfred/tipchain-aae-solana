@@ -11,7 +11,7 @@ import { Program, AnchorProvider, web3, BN, Idl } from '@coral-xyz/anchor';
 import { TOKEN_PROGRAM_ID, getAssociatedTokenAddress } from '@solana/spl-token';
 
 // Program ID (should match Anchor.toml)
-export const PROGRAM_ID = new PublicKey('Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS');
+export const PROGRAM_ID = new PublicKey('HEWsDJuFvTpofnKG6xiVshokK9oKQfpwwEqurKHAFP8F');
 
 // Types
 export interface Creator {

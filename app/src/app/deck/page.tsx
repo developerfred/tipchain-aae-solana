@@ -76,7 +76,7 @@ export default function PitchDeck() {
               <p className="text-sm text-gray-400 font-mono mt-2">
                 {`<iframe
   className="w-full h-full rounded-2xl"
-  src="YOUR_VIDEO_URL"
+  src="https://youtu.be/bxTK-s2stp8"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 />`}
@@ -573,7 +573,7 @@ export default function PitchDeck() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="https://github.com/developerfred/solana-x402"
+              href="https://github.com/developerfred/tipchain-aae-solana"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-xl text-white font-semibold transition-all transform hover:scale-105"

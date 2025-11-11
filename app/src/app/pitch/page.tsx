@@ -76,7 +76,7 @@ export default function PitchDeck() {
               <p className="text-sm text-gray-400 font-mono mt-2">
                 {`<iframe
   className="w-full h-full rounded-2xl"
-  src="YOUR_VIDEO_URL"
+  src="https://youtu.be/bxTK-s2stp8"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 />`}

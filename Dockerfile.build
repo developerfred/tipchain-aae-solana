@@ -1,0 +1,11 @@
+FROM projectserum/build:v0.32.1
+
+WORKDIR /workspace
+
+# Copiar projeto
+COPY . .
+
+# Build
+RUN anchor build
+
+CMD ["anchor", "build"]

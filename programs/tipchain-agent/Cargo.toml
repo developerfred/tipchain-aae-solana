@@ -1,0 +1,20 @@
+[package]
+name = "tipchain-agent"
+version = "0.1.0"
+description = "TipChain AI Agent Economy - x402 Powered Creator Platform"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "tipchain_agent"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.32.1"
+anchor-spl = "0.32.1"

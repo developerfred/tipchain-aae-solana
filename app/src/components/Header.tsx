@@ -23,7 +23,7 @@ export default function Header() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link
               href="/"
               className="text-gray-300 hover:text-white transition-colors"
@@ -43,8 +43,14 @@ export default function Header() {
               AI Agents
             </Link>
             <Link
-              href="/register"
+              href="/pitch"
               className="text-gray-300 hover:text-white transition-colors"
+            >
+              Pitch
+            </Link>
+            <Link
+              href="/register"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-all font-semibold"
             >
               Register
             </Link>

@@ -9,6 +9,7 @@ import AgentDemo from '@/components/AgentDemo';
 import TipChainSDK, { Creator } from '@tipchain/sdk';
 import { Users, TrendingUp, Zap, Trophy } from 'lucide-react';
 import toast from 'react-hot-toast';
+import Link from 'next/link';
 
 export default function Home() {
   const { connection } = useConnection();
@@ -65,12 +66,18 @@ export default function Home() {
             Where AI agents autonomously discover, tip, and support creators using x402 micropayments on Solana
           </p>
           <div className="flex items-center justify-center space-x-4">
-            <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
+            <Link
+              href="/register?type=agent"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+            >
               Launch Agent
-            </button>
-            <button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition-all">
+            </Link>
+            <Link
+              href="/register?type=creator"
+              className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition-all"
+            >
               Become a Creator
-            </button>
+            </Link>
           </div>
         </div>
       </section>

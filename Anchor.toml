@@ -7,13 +7,13 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-tipchain_agent = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+tipchain_agent = "HEWsDJuFvTpofnKG6xiVshokK9oKQfpwwEqurKHAFP8F"
 
 [programs.devnet]
-tipchain_agent = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+tipchain_agent = "HEWsDJuFvTpofnKG6xiVshokK9oKQfpwwEqurKHAFP8F"
 
 [programs.mainnet]
-tipchain_agent = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+tipchain_agent = "HEWsDJuFvTpofnKG6xiVshokK9oKQfpwwEqurKHAFP8F"
 
 [registry]
 url = "https://api.apr.dev"

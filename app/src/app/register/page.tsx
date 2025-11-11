@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { useSearchParams } from 'next/navigation';
 import Header from '@/components/Header';
 import TipChainSDK from '@tipchain/sdk';
 import { UserPlus, Bot, Loader2 } from 'lucide-react';
@@ -14,8 +15,13 @@ export default function RegisterPage() {
   const { connection } = useConnection();
   const { publicKey, signTransaction } = useWallet();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const [type, setType] = useState<RegistrationType>('creator');
+  // Detect type from query params
+  const typeParam = searchParams.get('type');
+  const initialType: RegistrationType = typeParam === 'agent' ? 'agent' : 'creator';
+
+  const [type, setType] = useState<RegistrationType>(initialType);
   const [loading, setLoading] = useState(false);
 
   // Creator fields
@@ -128,15 +134,13 @@ export default function RegisterPage() {
           <div className="grid grid-cols-2 gap-4 mb-8">
             <button
               onClick={() => setType('creator')}
-              className={`p-6 rounded-xl border-2 transition-all ${
-                type === 'creator'
+              className={`p-6 rounded-xl border-2 transition-all ${type === 'creator'
                   ? 'border-primary-500 bg-primary-500/10'
                   : 'border-gray-700 bg-gray-800/30 hover:border-gray-600'
-              }`}
+                }`}
             >
-              <UserPlus className={`w-8 h-8 mx-auto mb-3 ${
-                type === 'creator' ? 'text-primary-400' : 'text-gray-400'
-              }`} />
+              <UserPlus className={`w-8 h-8 mx-auto mb-3 ${type === 'creator' ? 'text-primary-400' : 'text-gray-400'
+                }`} />
               <div className="font-semibold text-white mb-1">Creator</div>
               <div className="text-sm text-gray-400">
                 Monetize your content
@@ -145,15 +149,13 @@ export default function RegisterPage() {
 
             <button
               onClick={() => setType('agent')}
-              className={`p-6 rounded-xl border-2 transition-all ${
-                type === 'agent'
+              className={`p-6 rounded-xl border-2 transition-all ${type === 'agent'
                   ? 'border-purple-500 bg-purple-500/10'
                   : 'border-gray-700 bg-gray-800/30 hover:border-gray-600'
-              }`}
+                }`}
             >
-              <Bot className={`w-8 h-8 mx-auto mb-3 ${
-                type === 'agent' ? 'text-purple-400' : 'text-gray-400'
-              }`} />
+              <Bot className={`w-8 h-8 mx-auto mb-3 ${type === 'agent' ? 'text-purple-400' : 'text-gray-400'
+                }`} />
               <div className="font-semibold text-white mb-1">AI Agent</div>
               <div className="text-sm text-gray-400">
                 Autonomous discovery

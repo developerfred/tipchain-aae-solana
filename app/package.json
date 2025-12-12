@@ -15,7 +15,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.32",
     "@solana/web3.js": "^1.87.6",
     "@tipchain/sdk": "file:../sdk",
-    "next": "14.0.4",
+    "next": "14.2.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
